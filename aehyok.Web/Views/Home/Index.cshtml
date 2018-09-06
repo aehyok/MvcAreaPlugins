@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h1>Web</h1>
+<div class="jumbotron">
+    @Html.ActionLink("Web", "Index", "Home", new { area = "" },null)
+    <p></p>
+    @Html.ActionLink("Admin", "Test", "DocManage", new { area = "Admin" }, null)
+</div>
+
+@Html.Partial("~/Administration/Views/DocManage/Index.cshtml")

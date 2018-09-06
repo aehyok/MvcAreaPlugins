@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DocManage</h2>
+
+@{ 
+    for(int index=1;index<=20;index++)
+    {
+        <input type="text" id="@index" name="@index" value="@index" />
+    }
+}
+<p></p>
+@Html.ActionLink("Web", "Index", "Home", new { area = "" }, null)
+
+@Html.ActionLink("Admin", "Test", "DocManage", new { area = "Admin" }, null)
